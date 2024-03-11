@@ -3,11 +3,15 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, DashboardComponent],
+  imports: [
+    RouterOutlet, HeaderComponent, FooterComponent, DashboardComponent,
+    SidebarComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
