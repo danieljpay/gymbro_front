@@ -5,17 +5,23 @@
                 <i class="bi bi-grid"></i>
             </button>
             <div class="sidebar-logo">
-                <a href="#">Gymbro</a>
+                <a [routerLink]="[ '/']">Gymbro</a>
             </div>
         </div>
         <ul class="sidebar-nav">
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                    <i class="bi bi-person"></i>
-                    <span>Profile</span>
+                <a [routerLink]="[ '/']" class="sidebar-link">
+                    <i class="bi bi-house"></i>
+                    <span>Inicio</span>
                 </a>
             </li>
             <li class="sidebar-item">
+                <a [routerLink]="[ '/dashboard']" class="sidebar-link">
+                    <i class="bi bi-speedometer2"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <!-- <li class="sidebar-item">
                 <a href="#" class="sidebar-link">
                     <i class="bi bi-calendar-date-fill"></i>
                     <span>Task</span>
@@ -64,7 +70,7 @@
                     <i class="bi bi-chat-left-text"></i>
                     <span>Notification</span>
                 </a>
-            </li>
+            </li> -->
             <li class="sidebar-item">
                 <a href="#" class="sidebar-link">
                     <i class="bi bi-gear"></i>
