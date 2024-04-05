@@ -10,15 +10,27 @@
         </div>
         <ul class="sidebar-nav">
             <li class="sidebar-item">
-                <a [routerLink]="[ '/']" class="sidebar-link">
+                <a [routerLink]="['/']" class="sidebar-link">
                     <i class="bi bi-house"></i>
                     <span>Inicio</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a [routerLink]="[ '/dashboard']" class="sidebar-link">
+                <a [routerLink]="['/dashboard']" class="sidebar-link">
                     <i class="bi bi-speedometer2"></i>
                     <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a [routerLink]="['/clients']" class="sidebar-link">
+                    <i class="bi bi-people-fill"></i>
+                    <span>Clientes</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a [routerLink]="['/memberships']" class="sidebar-link">
+                    <i class="bi bi-person-vcard"></i>
+                    <span>Membresías</span>
                 </a>
             </li>
             <!-- <li class="sidebar-item">
