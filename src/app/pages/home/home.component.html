@@ -5,6 +5,16 @@
             <app-search-id></app-search-id>
             <div id="id_founded_show">
 
+                <pre>
+                    <code>
+                        @for(client of CLIENTS; track client.id) {
+                            <label for="">Nombre: {{ client.name }} {{ client.last_name }}</label>
+                            <label for="">Teléfono: {{ client.phone }}</label>
+                            <label for="">Email: {{ client.email }}</label>
+                        }
+                    </code>
+                </pre>
+
             </div>
         </div>
     </form>
