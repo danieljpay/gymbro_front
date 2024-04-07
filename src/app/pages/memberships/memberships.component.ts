@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 
 import { Membership } from '../../models/membership.model';
 import { MembershipsService } from '../../services/memberships.service';
+import { MembershipCardComponent } from '../../components/membership-card/membership-card.component';
 
 @Component({
   selector: 'app-memberships',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MembershipCardComponent],
   templateUrl: './memberships.component.html',
   styleUrl: './memberships.component.scss'
 })

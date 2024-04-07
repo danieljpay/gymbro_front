@@ -1,11 +1,3 @@
 <div class="container">
-    <pre>
-        <code>
-            @for(membership of MEMBERSHIPS; track membership.id) {
-                <label for="">Nombre: {{ membership.name }}</label>
-                <label for="">Descripción: {{ membership.description }}</label>
-                <label for="">Duración: {{ membership.duration }}</label>
-            }
-        </code>
-    </pre>
+    <app-membership-card [memberships]="MEMBERSHIPS"></app-membership-card>
 </div>

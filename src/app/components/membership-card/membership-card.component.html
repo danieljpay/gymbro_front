@@ -1,0 +1,10 @@
+@for(membership of memberships; track membership.id) {
+    <div class="card mt-3">
+      <h5 class="card-header">{{ membership.name }}</h5>
+      <div class="card-body">
+        <h5 class="card-title">{{ membership.duration }}</h5>
+        <p class="card-text">{{ membership.description }}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+}
