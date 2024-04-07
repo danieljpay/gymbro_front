@@ -1,0 +1,10 @@
+@for(client of clients; track client.id) {
+  <div class="card mt-3">
+    <h5 class="card-header">{{ client.name }} {{ client.last_name }}</h5>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">{{ client.email }}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+}

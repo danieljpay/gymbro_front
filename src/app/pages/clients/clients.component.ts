@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { Client } from '../../models/client.model';
 import { ClientsService } from '../../services/clients.service';
+import { ClientCardComponent } from '../../components/client-card/client-card.component';
 
 @Component({
   selector: 'app-clients',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ClientCardComponent],
   templateUrl: './clients.component.html',
   styleUrl: './clients.component.scss'
 })
