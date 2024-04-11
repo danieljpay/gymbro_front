@@ -1,7 +1,20 @@
 <section>
-    <div class="main-container container">
-        <div class="text-center align-middle">
-            <h1>Este es el dashboard de Gymbro</h1>
+    <div class="main-container">
+        <div class="card mt-3 col-md-3">
+            <h5 class="card-header">Clientes</h5>
+            <div class="card-body">
+                <p class="card-text">
+                    Total Clientes: {{ totalClients }}
+                </p>
+            </div>
+        </div>
+        <div class="card mt-3 col-md-3">
+            <h5 class="card-header">Membresías</h5>
+            <div class="card-body">
+                <p class="card-text">
+                    Total membresías: {{ totalMemberships }}
+                </p>
+            </div>
         </div>
     </div>
 </section>
